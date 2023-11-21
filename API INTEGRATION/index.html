@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            width: 100%;
+            height: 50px;
+            background: white;
+            border: none;
+            border-radius: 8px;
+            margin: 10px;
+            text-align: center;
+        }form{
+            width: 400px;
+            height: auto;
+            background: paleturquoise;
+            padding: 10px;
+            background: blue;
+        }
+        button{
+            width: 300px;
+            height: 50px;
+            background: greenyellow;
+            border-radius: 8px;
+            text-align: center;
+        }h3{
+            text-align: center;
+            color:white;
+            font-size: 2rem;
+
+        }
+        .content{
+            text-align: center;
+            background: rgb(44, 243, 4);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h3>pay your bill via mpesa</h3>
+            <form method="POST" action="QUERY.php">
+                <label for="amount" >Enter Amount:</label>
+                <input type="text" name="amount" required placeholder="100"/>
+                <label for="phone">Enter Phone number</label>
+                <input type="text" name="phone" required placeholder="254 728930152"/>
+                <button type="submit">send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
